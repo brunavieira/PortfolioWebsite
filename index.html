@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/themePortfolio.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+    
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/main.js" ></script>
+    
+    <script type="text/javascript" src="js/jquery.viewportchecker.js" ></script>
+    
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="/PATH_TO_STATIC_FAVICON/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/PATH_TO_ANIMATED_FAVICON/favicon.ico" type="image/x-icon">
+    
+    <link rel="icon" type="image/ico" href="img/coffee.ico">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">  <a class="navbar-brand" href="#">Bruna Weber</a> 
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-7"> 
+      <ul class="nav navbar-nav"> 
+        <li class="active"><a href="#home">Home</a></li> 
+        <li><a href="#portfolio">Portfolio</a></li> 
+        <li><a href="#skills">Skills</a></li> 
+        <li><a href="#contact">Contact</a></li>
+      </ul> 
+    </div>
+  </div>
+</nav>
+<header>
+    <div class="jumbotron">
+      <div class="text-center">
+        <h2 id="home" class="anchor">Bruna Weber</h2>
+        <img class="img-circle" src="img/profsquare.jpg">
+        <h1>Web Developer</h1>
+      </div>
+    </div>
+</header>
+<div class="container">
+    <h2 id="portfolio" class="text-center anchor">Portfolio</h2>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <a href="http://www.brunafv.com/sample_investment_package.html" target="_blank">
+          <img class="thumbnail" src="img/sample_investment.png">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <a href="http://codepen.io/Bruna/full/xVeBBm/" target="_blank">
+          <img class="thumbnail" src="img/tribute.png">
+        </a>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  <hr>
+    <h2 id="skills" class="text-center anchor">Skills</h2>
+    <div class="row">
+        <div class="viewport-html">
+            <div class="col-md-3"></div>
+            <div class="col-md-1 vcenter">HTML</div>
+              <div class="col-md-5">
+                <div class="skill-border">
+                  <div class="skill html"></div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="viewport-css">    
+          <div class="col-md-3"></div>
+          <div class="col-md-1 vcenter">CSS</div>
+          <div class="col-md-5">
+            <div class="skill-border">
+              <div class="skill css"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="viewport-js">
+            <div class="col-md-3"></div>
+            <div class="col-md-1 vcenter">JavaScript</div>
+            <div class="col-md-5">
+            <div class="skill-border">
+                <div class="skill js"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="viewport-jquery">
+            <div class="col-md-3"></div>
+            <div class="col-md-1 vcenter">JQuery</div>
+            <div class="col-md-5">
+                <div class="skill-border">
+                    <div class="skill jquery"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="viewport-bootstrap">
+          <div class="col-md-3"></div>
+          <div class="col-md-1 vcenter">Bootstrap</div>
+          <div class="col-md-5">
+            <div class="skill-border">
+              <div class="skill bootstrap"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="viewport-sql">
+          <div class="col-md-3"></div>
+          <div class="col-md-1 vcenter">SQL</div>
+          <div class="col-md-5">
+            <div class="skill-border">
+              <div class="skill sql"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <hr>
+    <h2 id="contact" class="text-center anchor">Contact Me</h2>
+  <div class="row social">
+    <div class="col-md-5"></div>
+    <div class="col-md-1">
+      <a href="https://www.facebook.com/bruna.vieira.167" target="_blank"><i class="fa fa-facebook-square fa-4x"></i></a>
+    </div>
+    <div class="col-md-1">
+      <a href="https://www.linkedin.com/in/vieirabruna" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
+    </div>
+  </div>
+<!--form action="MAILTO:brunavweber@gmail.com" method="post" enctype="text/plain" role="form"-->
+<form id="contact-form" method="post" action="contact.php" role="form">
+    <div class="messages"></div>
+    <div class="controls">
+        <div class="row">
+          <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="form_name">First Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="First Name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                    <label for="form_lastname">Last Name *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last Name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                    <label for="form_phone">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+      </div>
+      <div class="row">
+            <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <input type="submit" class="btn btn-success btn-send btn-mail" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+            <div class="col-md-11">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            </div>
+        </div>
+    </div>
+  </form>
+    
+  <hr>
+  <p class="text-center">Designed and coded by Bruna Weber.</p>
+</div>
+
+</body>
+</html>

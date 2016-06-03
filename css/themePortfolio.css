@@ -1,0 +1,39 @@
+body { padding-top: 50px; }
+
+h1 { font-family: Copperplate; }
+h2 { font-family: Copperplate; }
+
+.jumbotron .h1, .jumbotron h1 {
+  font-size: 56px; color: #666666;
+}
+
+.navbar-default { background-color: #ffce99; border-color: orange; }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background-color: orange; }
+
+.anchor {
+    display:block;
+    padding-top:90px;
+    margin-top:-90px;
+ }
+
+.img-circle { border: 5px solid orange; }
+
+.thumbnail { width: 100%; }
+.thumbnail:hover { opacity: 0.8; }
+
+.vcenter { margin-top: 15px; }
+
+.skill-border { border: 1px solid #333; width: 100%; margin: 10px 0; }
+
+.skill { background-color: orange; height: 30px; }
+
+.html, .css, .sql, .bootstrap, .js, .jquery { width: 0;}
+
+.img-circle { width: 160px; }
+
+.social { margin-bottom: 20px; }
+
+.btn-mail { background-color: orange;
+    border-color: red; }
+.btn-mail:hover { background-color: #ffc266; border-color: red;}
